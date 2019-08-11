@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+table{
+    width: 100%;   
+}
+tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+th{
+    cursor: pointer;
+}
+.tab{
+    padding-left: 100px;
+}
+.tab input{
+    display: block;
+    width: 230px;
+}
+li{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    left: 30%;
+}
+a{
+    text-decoration: none;
+    color: black
+}

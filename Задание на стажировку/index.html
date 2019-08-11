@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box"> 
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="th1" onclick="hide()">hide</th>
+          <th class="th2" onclick="hide1()">hide</th>
+          <th class="th3" onclick="hide2()">hide</th>
+          <th class="th4" onclick="hide3()">hide</th>
+          <th class="th5" onclick="hide4()">hide</th>
+        </tr>
+      <tr>
+        <th data-type='number'>№</th>
+        <th data-type='text'>First Name</th>
+        <th data-type='text'>Last Name</th>
+        <th data-type='text'>About</th>
+        <th data-type='color'>Eye color</th>
+      </tr>
+    </thead>
+    </table>
+  </div>
+  <div class="tab">
+    №: <input type="number"fname" id="number">
+    First Name: <input type="text" name="fname" id="fname">
+    Last Name: <input type="text" name="lname" id="lname">
+    About: <input type="text" name="about" id="about">
+    Eye Color(On english): <input type="text" name="eyeColor" id="eyeColor"> <br>
+    <button onclick="addRow()">Добавить</button>
+    <button onclick="editRow()">Применить</button>
+    <button onclick="removeRow()">Удалить</button>
+  </div>
+  <ul class="pagination">
+    <li><a href="#" onclick="hideTableRows()">1</a></li>
+    <li><a href="#" onclick="hideTableRows1()">2</a></li>
+    <li><a href="#" onclick="hideTableRows2()">3</a></li>
+    <li><a href="#" onclick="hideTableRows3()">4</a></li>
+    <li><a href="#" onclick="hideTableRows4()">5</a></li>
+  </ul>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
